@@ -10,8 +10,21 @@ body {
 
 .grid {
   display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 20px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
 }
 
 header {
@@ -26,7 +39,6 @@ header {
 
 header h1 {
   font-family: "Playfair Display", serif;
-
   font-weight: 700;
   font-size: 96px;
   line-height: 1;
@@ -49,7 +61,44 @@ header h3 {
   margin: 0;
 }
 
-header a {
+main {
+  background: #12101d;
+}
+
+main .content {
+  margin-top: 100px;
+}
+
+main h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #5bd5e3;
+  background: rgba(91, 213, 227, 0.15);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+  line-height: 1.5;
+  margin: 0;
+}
+
+main p {
+  color: gray;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+header a,
+main a {
   text-decoration: none;
   background: #885df1;
   color: white;
@@ -61,6 +110,10 @@ header a {
   padding: 16px 32px;
   margin-top: 32px;
   display: inline-block;
+}
+
+.img-fluid {
+  width: 100%;
 }
 
 footer {
@@ -120,8 +173,17 @@ footer a {
     font-size: 14px;
   }
 
+  main .content {
+    margin-top: 0;
+  }
+
   .grid {
     grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 
   footer {
