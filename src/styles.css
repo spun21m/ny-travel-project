@@ -24,7 +24,7 @@ body {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -45,12 +45,25 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 .card {
   background: white;
   text-align: left;
   margin: 30px 0;
   border-radius: 15px;
   box-shadow: 10px 10px 40px 0px #07051433;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.card-header.grid img {
+  aspect-ratio: 1 / 1;
 }
 
 .card p {
