@@ -21,6 +21,7 @@ body {
   margin-top: 32px;
   display: inline-block;
   text-align: center;
+  letter-spacing: 5px;
 }
 
 .img-responsive {
@@ -63,7 +64,12 @@ body {
 }
 
 .card-header.grid img {
+  border-top-left-radius: 15px;
   aspect-ratio: 1 / 1;
+}
+
+.card-header.grid iframe {
+  border-top-right-radius: 15px;
 }
 
 .card p {
@@ -253,8 +259,8 @@ footer a {
     font-size: 14px;
   }
 
-  main .main-content {
-    text-align: center;
+  main .main-content a {
+    display: block;
   }
 
   .grid {
@@ -268,5 +274,17 @@ footer a {
 
   footer {
     padding: 50px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
+  }
+
+  .card-header.grid iframe {
+    border-radius: 15px 15px 0 0;
   }
 }
